@@ -38,11 +38,13 @@ static void PrintArray(string[] array)
     Console.WriteLine($" [ {String.Join(", ", array)} ] ");
 }
 
+int lessThan = 4;
+
 string[] array = GetArrayFromConsole();
 Console.WriteLine("Введенный массив:");
 PrintArray(array);
 
 
-string[] filteredArray = FilterArrayLessNLetters(array, 4);
+string[] filteredArray = FilterArrayLessNLetters(array, lessThan);
 Console.WriteLine("Результат:");
 PrintArray(filteredArray);
